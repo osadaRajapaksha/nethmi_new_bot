@@ -64,7 +64,7 @@ except Exception as exc:
 
 # -------------- YOUR 10→10 CHANNEL MAPPING HERE -----------------
 # Example format:
-# News1,News2,Sig1,Sig2
+
 CHANNEL_PAIRS = {
    -1003364376763: [
   -1003453679424, -1003334898579, -1003351226347, -1003434479602,
