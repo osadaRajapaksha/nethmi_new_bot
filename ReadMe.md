@@ -1,38 +1,115 @@
-# Channel Auto-Post Bot
+# 🤖 Telegram Bot
 
-Use the [usermode](https://github.com/xditya/ChannelAutoPost/tree/user) branch, if you want to forward messages without being an admin in the from channel.
+A simple and customizable Telegram bot built with Python. This bot can handle commands, respond to user messages, and can be easily extended to integrate with external APIs and services.
 
-This bot can send all new messages from channels, directly to another set of channels (or group, just in case), without the forwarded tag!
+---
 
-## Setting up 
-* First:
-> `APP_ID` and `API_HASH` - Get it from my.telegram.org   
-> `BOT_TOKEN` - Get it from [@BotFather](https://t.me/BotFather)   
-> `FROM_CHANNEL` - The IDs of the main channel from where posts have to be copied, split by space. eg: `-100xxxx -100yyyy -100abcd ...`   
-> `TO_CHANNEL` - The ID of the channel to which the posts are to be sent, split by space. eg: `-100xxxx -100yyyy -100abcd ...`   
+## 🚀 Features
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/xditya/ChannelAutoPost)
+* Responds to basic commands (`/start`, `/help`, etc.)
+* Custom message handling
+* Easy to extend with new commands and features
+* Environment-based configuration support
+* Error handling and logging
+* Lightweight and beginner-friendly project structure
 
-* Chose a platform to deploy on:
-<details>
-<summary>Heroku/Kintohub/Zeet</summary>
-<br>
-Add the above values to the environment vars and deploy the bot.
-</details>
-<details>
-<summary>Local Deploys</summary>
-<br>
-- Clone the repo:   <code>git clone https://github.com/xditya/ChannelAutoForwarder</code></br>
-- Make a <code>.env</code> file in the root of the repo, like <a href="https://github.com/xditya/ChannelAutoForwarder/blob/main/.env.sample">.env.sample</a> and fill in the values.</br>
-- Use <code>python3 bot.py</code> to start the bot.</br>  
-</details>
+---
 
-## Usage
-Add the bot to both channels with admin permission, and thats it!
-All new messages will be auto-posted!!
+## 📦 Installation
 
-Visit [@TeamCyphers](https://t.me/TeamCyphers) for help.
-## Credits
-> [Lonami](https://github.com/LonamiWebs), for [Telethon](https://github.com/LonamiWebs/Telethon).   
-> [xditya](https://github.com/xditya), me.   
-> [@ettan_fan](https://t.me/ettan_fan), for the whole idea.   
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/telegram-bot.git
+cd telegram-bot
+```
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Configure Environment Variables
+
+Create a `.env` file in the project root and add your Telegram Bot Token:
+
+```env
+TELEGRAM_TOKEN=your-telegram-bot-token
+```
+
+---
+
+## ▶️ Running the Bot
+
+Start the bot using:
+
+```bash
+python bot.py
+```
+
+The bot will begin listening for incoming messages and commands.
+
+---
+
+## 📁 Project Structure
+
+```text
+telegram-bot/
+│
+├── bot.py              # Main application entry point
+├── handlers/           # Command and message handlers
+├── utils/              # Helper functions and utilities
+├── requirements.txt    # Project dependencies
+├── .env                # Environment variables
+└── README.md           # Project documentation
+```
+
+---
+
+## 📖 Available Commands
+
+| Command        | Description                        |
+| -------------- | ---------------------------------- |
+| `/start`       | Starts the bot and greets the user |
+| `/help`        | Displays available commands        |
+| `/echo <text>` | Replies with the provided text     |
+
+---
+
+## 🛠️ Technologies Used
+
+* Python
+* Telegram Bot API
+* python-telegram-bot
+* dotenv (for environment management)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+If you'd like to improve this project:
+
+1. Fork the repository
+2. Create a new feature branch
+3. Commit your changes
+4. Push the branch
+5. Open a Pull Request
+
+For major changes, please open an issue first to discuss your proposed modifications.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License. Feel free to use, modify, and distribute it according to the license terms.
+
+---
+
+## 👨‍💻 Author
+
+Developed and maintained by **Your Name**.
+
+If you find this project useful, consider giving it a ⭐ on GitHub.
